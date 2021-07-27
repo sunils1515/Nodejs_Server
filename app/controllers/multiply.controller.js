@@ -25,27 +25,14 @@ exports.create = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Tutorial."
+          err.message || "Some error occurred while creating the Multiplication."
       });
     });
 };
 
 
-// Find a single Tutorial with an id
+// Retrieve last updated value
 exports.findOne = (req, res) => {
-
-
-  // Multiply.find()
-  //   .then(data => {
-  //     if (!data)
-  //       res.status(404).send({ message: "Not found Multiply "});
-  //     else res.send(data);
-  //   })
-  //   .catch(err => {
-  //     res
-  //       .status(500)
-  //       .send({ message: "Error retrieving"});
-  //   });
 
   Multiply.findOne({}).sort({_id:-1}).limit(1).then(function(result){
     res.send(result);
