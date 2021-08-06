@@ -2,6 +2,8 @@
 ```
 Nodejs,
 MongoDB
+After installing mongo DB,
+run on localhost default port
 ```
 
 
