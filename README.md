@@ -1,6 +1,8 @@
 ## Prerequisites:
-Nodejs
+```
+Nodejs,
 MongoDB
+```
 
 
 ## Project setup
